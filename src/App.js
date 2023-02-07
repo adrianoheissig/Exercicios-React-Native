@@ -1,8 +1,10 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 
-import Pai from './components/indireta/Pai';
-//import Pai from './components/direta/Pai';
+import ContadorV2 from './components/contador/ContadorV2';
+
+// import Pai from './components/indireta/Pai';
+// import Pai from './components/direta/Pai';
 // import Contador from './components/Contador';
 // import Botao from './components/Botao';
 // import Titulo from './components/Titulo';
@@ -14,8 +16,9 @@ import Pai from './components/indireta/Pai';
 const App = () => {
   return (
     <SafeAreaView style={style.App}>
-      <Pai />
+      <ContadorV2 />
       {/*
+      <Pai />
       <Contador inicial={1} />
       <Botao />
       <Titulo principal="Cadastro" secundario="Tela para Cadastro de Usuário" />
