@@ -1,7 +1,9 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
+import Pai from './components/direta/Pai';
 
-import Botao from './components/Botao';
+// import Contador from './components/Contador';
+// import Botao from './components/Botao';
 // import Titulo from './components/Titulo';
 // import Aleatorio from './components/Aleatorio';
 // import MinMax from './components/MinMax';
@@ -11,8 +13,10 @@ import Botao from './components/Botao';
 const App = () => {
   return (
     <SafeAreaView style={style.App}>
-      <Botao />
+      <Pai />
       {/*
+      <Contador inicial={1} />
+      <Botao />
       <Titulo principal="Cadastro" secundario="Tela para Cadastro de Usuário" />
       <Aleatorio min={1} max={50} />
       <MinMax min={10} max={30} />
