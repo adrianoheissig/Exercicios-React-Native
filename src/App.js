@@ -1,8 +1,9 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
+import Familia from './components/relacao/Familia';
+import Membros from './components/relacao/Membros';
 
-import Diferenciar from './components/Diferenciar';
-
+// import Diferenciar from './components/Diferenciar';
 // import ContadorV2 from './components/contador/ContadorV2';
 // import Pai from './components/indireta/Pai';
 // import Pai from './components/direta/Pai';
@@ -17,8 +18,16 @@ import Diferenciar from './components/Diferenciar';
 const App = () => {
   return (
     <SafeAreaView style={style.App}>
-      <Diferenciar />
+      <Familia>
+        <Membros nome="Adriano" sobreNome="Heissig" />
+        <Membros nome="Ana" sobreNome="Heissig" />
+      </Familia>
+      <Familia>
+        <Membros nome="André" sobreNome="Silva" />
+        <Membros nome="Claudia" sobreNome="Silva" />
+      </Familia>
       {/*
+      <Diferenciar />
       <ContadorV2 />
       <Pai />
       <Contador inicial={1} />
