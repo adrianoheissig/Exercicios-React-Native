@@ -1,8 +1,10 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import Familia from './components/relacao/Familia';
-import Membros from './components/relacao/Membros';
 
+import UsuarioLogado from './components/UsuarioLogado';
+
+// import Familia from './components/relacao/Familia';
+// import Membros from './components/relacao/Membros';
 // import Diferenciar from './components/Diferenciar';
 // import ContadorV2 from './components/contador/ContadorV2';
 // import Pai from './components/indireta/Pai';
@@ -18,6 +20,14 @@ import Membros from './components/relacao/Membros';
 const App = () => {
   return (
     <SafeAreaView style={style.App}>
+      <UsuarioLogado
+        usuario={{nome: 'Adriano', email: 'adriano@rosset.com.br'}}
+      />
+      <UsuarioLogado usuario={{nome: 'Adriano'}} />
+      <UsuarioLogado usuario={{email: 'adriano@rosset.com.br'}} />
+      <UsuarioLogado usuario={{}} />
+      <UsuarioLogado usuario={null} />
+      {/*
       <Familia>
         <Membros nome="Adriano" sobreNome="Heissig" />
         <Membros nome="Ana" sobreNome="Heissig" />
@@ -26,7 +36,6 @@ const App = () => {
         <Membros nome="André" sobreNome="Silva" />
         <Membros nome="Claudia" sobreNome="Silva" />
       </Familia>
-      {/*
       <Diferenciar />
       <ContadorV2 />
       <Pai />
