@@ -10,7 +10,7 @@ export default props => {
 
 const style = StyleSheet.create({
   Quadrado: {
-    width: 20,
-    height: 20,
+    width: 50,
+    height: 50,
   },
 });
