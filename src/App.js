@@ -1,8 +1,11 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 
-import FlexBoxV1 from './components/layout/FlexBoxV1';
+import FlexBoxV4 from './components/layout/FlexBoxV4';
 
+// import FlexBoxV3 from './components/layout/FlexBoxV3';
+// import FlexBoxV2 from './components/layout/FlexBoxV2';
+// import FlexBoxV1 from './components/layout/FlexBoxV1';
 // import Quadrado from './components/layout/Quadrado';
 // import DigiteSeuNome from './components/DigiteSeuNome';
 // import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
@@ -25,8 +28,11 @@ import FlexBoxV1 from './components/layout/FlexBoxV1';
 const App = () => {
   return (
     <SafeAreaView style={style.App}>
-      <FlexBoxV1 />
+      <FlexBoxV4 />
       {/*
+      <FlexBoxV3 />
+      <FlexBoxV2 />
+      <FlexBoxV1 />
       <Quadrado />
       <Quadrado cor="#900" />
       <Quadrado cor="#090" />
@@ -73,5 +79,6 @@ const style = StyleSheet.create({
     flexGrow: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20
   },
 });

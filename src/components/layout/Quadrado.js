@@ -1,16 +1,10 @@
 import React from 'react';
 
-import {StyleSheet, View} from 'react-native';
+import { View} from 'react-native';
 
 export default props => {
+  const lado = props.lado || 50;
   return (
-    <View style={[style.Quadrado, {backgroundColor: props.cor || '#000'}]} />
+    <View style={ {backgroundColor: props.cor || '#000', width: lado, height: lado}} />
   );
 };
-
-const style = StyleSheet.create({
-  Quadrado: {
-    width: 50,
-    height: 50,
-  },
-});
