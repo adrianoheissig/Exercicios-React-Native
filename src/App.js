@@ -1,8 +1,9 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 
-import FlexBoxV4 from './components/layout/FlexBoxV4';
+import Mega from './components/mega/Mega';
 
+// import FlexBoxV4 from './components/layout/FlexBoxV4';
 // import FlexBoxV3 from './components/layout/FlexBoxV3';
 // import FlexBoxV2 from './components/layout/FlexBoxV2';
 // import FlexBoxV1 from './components/layout/FlexBoxV1';
@@ -28,8 +29,9 @@ import FlexBoxV4 from './components/layout/FlexBoxV4';
 const App = () => {
   return (
     <SafeAreaView style={style.App}>
-      <FlexBoxV4 />
+      <Mega qtdeNumeros={7} />
       {/*
+      <FlexBoxV4 />
       <FlexBoxV3 />
       <FlexBoxV2 />
       <FlexBoxV1 />
@@ -79,6 +81,6 @@ const style = StyleSheet.create({
     flexGrow: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 20
+    padding: 20,
   },
 });
