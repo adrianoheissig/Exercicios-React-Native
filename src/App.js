@@ -29,7 +29,7 @@ import Mega from './components/mega/Mega';
 const App = () => {
   return (
     <SafeAreaView style={style.App}>
-      <Mega qtdeNumeros={7} />
+      <Mega qtdeNumeros={6} />
       {/*
       <FlexBoxV4 />
       <FlexBoxV3 />
